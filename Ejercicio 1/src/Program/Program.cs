@@ -9,9 +9,9 @@ namespace SRP
         {
             Book book1 = new Book("Design Patterns","Erich Gamma & Others","001-034");
             Book book2 = new Book("Pro C#","Troelsen","001-035");
-            book1.ShelveBook("A","7");
-            book2.ShelveBook("B","3");
-
+            BookPlace book1Place = new BookPlace("A","7");
+            BookPlace book2Place = new BookPlace("B","3");
+            Console.WriteLine($"El libro {book1.Title} está en {book1Place.LibrarySector},{book1Place.LibraryShelve}");
         }
     }
 }

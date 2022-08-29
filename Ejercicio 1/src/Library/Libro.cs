@@ -8,8 +8,6 @@ namespace SRP
         public string Title { get ; }
         public string Author { get ; }
         public string Code { get ;  }
-        public string LibrarySector { get ; set; } //El sector donde se guarda y su repisa debe ser conocido por otra clase que se encargue de eso
-        public string LibraryShelve { get ; set; }
 
         public Book(String title, String author, String code)
         {
@@ -17,12 +15,19 @@ namespace SRP
             this.Author = author;
             this.Code = code;
         }
+    }
+    public class BookPlace
+    {
+        public string LibrarySector { get; set; }
+        public string LibraryShelve { get; set; }
 
-        public void ShelveBook(String sector, String shelve)
+        public BookPlace(string Sector, string Shelve)
         {
-            this.LibrarySector = sector;
-            this.LibraryShelve = shelve;
+            this.LibrarySector = Sector;
+            this.LibraryShelve = Shelve;
         }
 
     }
+
 }
+
