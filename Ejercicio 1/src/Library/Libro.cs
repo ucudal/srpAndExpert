@@ -8,7 +8,7 @@ namespace SRP
         public string Title { get ; }
         public string Author { get ; }
         public string Code { get ;  }
-        public string LibrarySector { get ; set; }
+        public string LibrarySector { get ; set; } //El sector donde se guarda y su repisa debe ser conocido por otra clase que se encargue de eso
         public string LibraryShelve { get ; set; }
 
         public Book(String title, String author, String code)
