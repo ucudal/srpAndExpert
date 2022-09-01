@@ -1,0 +1,8 @@
+Class Patient:
+- Saber los datos del paciente
+
+Class Doctor:
+- Saber los datos del Doctor
+
+Class appointment:                                              conoce a: 
+- Saber los datos en general de la consulta                     class doctor - class patient
